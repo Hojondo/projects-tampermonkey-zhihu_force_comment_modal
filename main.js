@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         zhihu_弹窗打开评论列表
+// @name         zhihu_force_comment_modal
 // @namespace    http://tampermonkey.net/
 // @version      2025-05-16
 // @description  劫持resource，强制comment通过modal打开!
