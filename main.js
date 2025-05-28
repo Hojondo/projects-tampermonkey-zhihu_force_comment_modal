@@ -56,7 +56,7 @@
                             typeof factory === "function" &&
                             factory.toString().includes(FEATURE_STRING)
                         ) {
-                            console.log(`🎯 匹配到目标模块 ${key} in chunk ${chunkId}`);
+                            // console.log(`🎯 匹配到目标模块 ${key} in chunk ${chunkId}`);
  
                             const wrappedFactory = function (module, exports, require) {
                                 factory.call(this, module, exports, require);
@@ -72,7 +72,7 @@
  
                                             if (props && typeof props === 'object' && 'commentPattern' in props) {
                                                 props.commentPattern = 'fixed';
-                                                console.log('✅ 成功注入 commentPattern = "fixed"');
+                                                // console.log('✅ 成功注入 commentPattern = "fixed"');
                                             }
  
                                             return result;
@@ -92,9 +92,9 @@
             },
         });
  
-        console.log(
-            "✅ Webpack chunk push hook injected (default function override)"
-        );
+        // console.log(
+        //     "✅ Webpack chunk push hook injected (default function override)"
+        // );
     };
  
     const enableChunkErrorRecovery = () => {
